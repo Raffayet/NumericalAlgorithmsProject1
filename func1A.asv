@@ -1,0 +1,28 @@
+function r = func1A(A)
+
+[rows, columns] = size(A);
+
+if rows ~= columns
+    return
+end
+
+if rows < 3 || columns < 3
+    return
+end
+
+maximum = A(1,1);
+
+for 
+
+    for row = 1:2
+        for column = 1:2
+            if A(row, column) > maximum
+                maximum = A(row, column) 
+            end
+        end
+    end
+
+r = [maximum]
+
+end
+
